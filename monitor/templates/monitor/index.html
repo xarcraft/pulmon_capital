@@ -1,0 +1,18 @@
+<!-- vista_calidad_aire.html -->
+<h1>Calidad del Aire</h1>
+<table>
+    <tr>
+        <th>Sensor</th>
+        <th>Concentración NO2</th>
+        <th>Proximidad (m)</th>
+        <th>Fecha/Hora</th>
+    </tr>
+    {% for dato in datos %}
+    <tr>
+        <td>{{ dato.sensor_id }}</td>
+        <td>{{ dato.ica }}</td>
+        <td>{{ dato.proximidad }}</td>
+        <td>{{ dato.fecha_hora }}</td>
+    </tr>
+    {% endfor %}
+</table>
