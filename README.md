@@ -85,6 +85,9 @@ python manage.py runserver
 Y al no tener acceso a la base de datos para realizar consultas de manera automatica, se debe de ingresar manualmente los mismos, sin embargo a tiempo futuro toda su lógica y uso puede ser sincronizada con la data proporcionada por los sensores en cuestión.
 
 
+***Actualmente presenta la funcion de alerta de ica elevado si el dato que se ingresa supera el umbral de los 100 puntos ica al recargar la pagina lanzara una alerta de advertencia.***
+
+
 ## Apariencia del proyecto
 
 ![apariencia](https://github.com/user-attachments/assets/51a71920-073b-4239-b03d-e4cccf85c4df)

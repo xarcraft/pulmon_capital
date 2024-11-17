@@ -38,7 +38,7 @@
     <!-- datos de la grafica -->
     <h1 class="text-center mb-3">Calidad del Aire</h1>
     <div class="container">
-      <table class="table">
+      <table class="table" id="tabla-calidad-aire">
         <thead class="thead-dark">
           <tr>
             <th>Sensor</th>
@@ -59,6 +59,29 @@
         </tbody>
       </table>
     </div>
+
+    <!-- funcion para generar la alerta de peligro -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() { verificarICA(); });
+      function verificarICA() {
+        // Definir el umbral de peligro segun  la grafica
+        const umbral = 101;
+        // Obtener las filas de la tabla
+        const filas = document.querySelectorAll("#tabla-calidad-aire tbody tr");
+        // Recorrer las filas y verificar el valor del ICA
+        filas.forEach((fila) => {
+          const valorICA = parseFloat(fila.children[1].innerText);
+          console.log(valorICA)
+          const sensor = fila.children[0].innerText;
+          if (valorICA > umbral) {
+            alert(
+              `¡Peligro! El sensor ${sensor} ha detectado un ICA de ${valorICA}, lo cual es peligroso.`
+            );
+          }
+        });
+      }
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
