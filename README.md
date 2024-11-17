@@ -86,4 +86,4 @@ Y al no tener acceso a la base de datos para realizar consultas de manera automa
 
 
 
-![imagen del front](https://github.com/xarcraft/pulmon_capital/assets/img/apariencia.png?raw=true)
+![apariencia](https://github.com/user-attachments/assets/51a71920-073b-4239-b03d-e4cccf85c4df)
