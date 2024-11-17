@@ -85,5 +85,6 @@ python manage.py runserver
 Y al no tener acceso a la base de datos para realizar consultas de manera automatica, se debe de ingresar manualmente los mismos, sin embargo a tiempo futuro toda su lógica y uso puede ser sincronizada con la data proporcionada por los sensores en cuestión.
 
 
+## Apariencia del proyecto
 
 ![apariencia](https://github.com/user-attachments/assets/51a71920-073b-4239-b03d-e4cccf85c4df)
