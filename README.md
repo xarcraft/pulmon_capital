@@ -83,3 +83,7 @@ python manage.py runserver
 
 > **Nota:** Este panel esta diseñado para ingresar de manera manual los datos a divisar en el front del aplicativo ya que se trata de un proyecto de ejemplo y no de un proyecto real. 
 Y al no tener acceso a la base de datos para realizar consultas de manera automatica, se debe de ingresar manualmente los mismos, sin embargo a tiempo futuro toda su lógica y uso puede ser sincronizada con la data proporcionada por los sensores en cuestión.
+
+
+
+![imagen del front](https://github.com/xarcraft/pulmon_capital/assets/img/apariencia.png?raw=true)

@@ -30,15 +30,3 @@ def vista_calidad_aire(request):
     datos = CalidadAire.objects.all()
     print(datos)
     return render(request, 'index.html', {'datos': datos})
-
-
-""" 
-INDICE DE CALIDAD DEL AIRE - ICA
-CONCENTRACION DE NO2(DIOXIDO DE NITROGENO) DE LA ULTIMA HORA
-0-40 BUENA
-41-90 RAZONABLEMENTE BUENA
-91-120 REGULAR
-121-230 DESFAVORABLE
-231-340 MUY DESFAVORABLE
-341-1000 EXTREMADAMENTE DESFAVORABLE
-"""
