@@ -8,6 +8,5 @@ class CalidadAire(models.Model):
     fecha_hora = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        verbose_name = 'calidad de aire'
+        verbose_name = 'medición'
         verbose_name_plural = 'Aire'
-        ordering = ['ica']
